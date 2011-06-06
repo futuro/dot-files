@@ -1,0 +1,15 @@
+"1.0b6 (created: 2011/03/09 09:25:18)
+
+loadplugins '\.(js|penta)$'
+group user
+command! -nargs=+ down :o http://downforeveryoneorjustme.com/<args>
+command! -nargs=+ downt :t http://downforeveryoneorjustme.com/<args>
+command! -nargs=+ pd :o http://perldoc.perl.org/search.html?q=<args>
+command! -nargs=+ pdt :t http://perldoc.perl.org/search.html?q=<args>
+command! -nargs=+ py :o !python <args>
+command! -nargs=+ pyt :t !python <args>
+set defsearch=ddg
+set guioptions=Cs
+set runtimepath=/home/eniessen-derry/.pentadactyl
+
+" vim: set ft=pentadactyl:

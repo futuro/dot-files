@@ -1,0 +1,11 @@
+# escape ^\\
+# hardstatus alwayslastline "%{=b}%{G}%w %=%{kG}%C%A  %D, %M/%d/%Y "
+# startup_message off
+# shell /bin/bash
+# defscrollback 30000
+# term xterm-256color
+# vbell off
+bind t focus top
+bind k focus up
+bind j focus down
+bind b focus bottom

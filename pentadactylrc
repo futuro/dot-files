@@ -1,15 +1,60 @@
-"1.0b6 (created: 2011/03/09 09:25:18)
+"hg6144-default (2011-05-11 13:49 -0400)
 
 loadplugins '\.(js|penta)$'
 group user
+
+" Commands
 command! -nargs=+ down :o http://downforeveryoneorjustme.com/<args>
 command! -nargs=+ downt :t http://downforeveryoneorjustme.com/<args>
 command! -nargs=+ pd :o http://perldoc.perl.org/search.html?q=<args>
 command! -nargs=+ pdt :t http://perldoc.perl.org/search.html?q=<args>
 command! -nargs=+ py :o !python <args>
 command! -nargs=+ pyt :t !python <args>
+
+" Highlighting rules
+highlight Bell border: 0 none; background: #161616;
+highlight BufTab color: #af875f; background: #1c1c1c; font-weight: normal;
+highlight BufTabSelected color: #ff5f00; background: #1c1c1c; font-weight: bold;
+highlight CmdLine color: #afd700; background: #161616; font-weight: normal;
+highlight CompDesc color: #af875f; background: #161616; font-weight: normal; font-size: 9pt; width: 75%;
+highlight CompIcon width: 16px; min-width: 16px; display: inline-block; margin-right: 0.5ex;
+highlight CompItem[selected] color: #ffff00; background: -moz-linear-gradient(top, #303030, #121212) !important; font-weight: bold;
+highlight CompLess text-align: center; height:    0; line-height: 0.5ex; padding-top: 1ex;
+highlight CompMore text-align: center; height: .5ex; line-height: 0.5ex; margin-bottom: -0.5ex;
+highlight CompMsg color: #af875f;
+highlight CompResult color: #af875f; background: #161616; font-weight: normal; font-size: 10pt; width: 45%; overflow: hidden;
+highlight CompTitle color: #af875f; background: #161616; font-weight: normal;
+highlight CompTitle>* padding: 0 0.5ex;
+highlight ErrorMsg color: #ffffff; background: red; font-weight: bold;
+highlight Filter color: #af875f; background: #161616; font-weight: bold;
+highlight FrameIndicator background: #161616; opacity: 0.5; z-index: 999; position: fixed; top: 0; bottom: 0; left: 0; right: 0;
+highlight Function color: #afd700; background: #161616;
+highlight Gradient height: 1px; margin-bottom: -1px; margin-top: -1px;
+highlight Hint color: #ff5f00; background: #161616; font-family: Terminus; font-weight: bold; font-size: 20px;
+highlight HintActive color: #333333; background: #F18C96;
+highlight Hint::after content: attr(number);
+highlight HintElem color: #000D18;
+highlight HintImage opacity: .2;
+highlight InfoMsg color: #afafaf; background: #161616;
+highlight LineNr color: #626262; background: #161616;
+highlight Message white-space: normal; min-width: 100%; padding-left: 2em; text-indent: -2em; display: block;
+highlight ModeMsg color: #afafaf; background: #161616;
+highlight MoreMsg color: #afafaf; background: #161616;
+highlight NonText color: #1c1c1c; min-height: 16px; padding-left: 2px;
+highlight Normal color: #afff00; background: #161616; font-weight: normal;
+highlight Number color: #0087ff; background: #161616;
+highlight Question color: #e5e5e5; background: #161616; font-weight: bold;
+highlight Search color: #ffd700; background: #303030; font-weight:bold; font-size: inherit; padding: 0;
+highlight StatusLine color: #ff5f00 ; background: #161616; font-size: 9pt;
+highlight StatusLineBroken color: #e4e4e4 ; background: #161616; font-size: 9pt;
+highlight StatusLineSecure color: #e4e4e4 ; background: #161616; font-size: 9pt;
+highlight String color: #afaf5f; background: #161616;
+highlight Tag color: #afaf5f; background: #161616;
+highlight Title color: #afaf5f; background: #161616; font-weight: bold;
+highlight URL color: #0087ff; background: #161616; text-decoration: none;
+highlight WarningMsg color: #ff0000; background: #161616;
+
+" Misc options
 set defsearch=ddg
-set guioptions=Cs
-set runtimepath=/home/eniessen-derry/.pentadactyl
 
 " vim: set ft=pentadactyl:

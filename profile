@@ -21,6 +21,11 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+# set PATH to include the git-core binaries if they exist
+if [ -d "/usr/lib/git-core" ] ; then
+    PATH="/usr/lib/git-core:$PATH"
+fi
+
 SSH_ENV="$HOME/.ssh/environment"
 
 #function start_agent {

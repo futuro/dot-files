@@ -1,0 +1,22 @@
+# Aliases!
+source ~/.zsh_aliases
+source ~/.bash_aliases
+
+if [[ "$TERM" == "xterm" ]]; then
+	export TERM=xterm-256color
+fi
+
+if [[ -r ~/.dircolors ]]; then
+	eval $(dircolors -b ~/.dircolors)
+fi
+
+unset LESS_TERMCAP_mb
+unset LESS_TERMCAP_md
+unset LESS_TERMCAP_me
+unset LESS_TERMCAP_se
+unset LESS_TERMCAP_so
+unset LESS_TERMCAP_ue
+unset LESS_TERMCAP_us
+
+# export LD_RUN_PATH=/usr/local/lib/:/usr/lib/:$LD_RUN_PATH
+# export LIBRARY_PATH=/usr/local/include:/usr/include:$LIBRARY_PATH

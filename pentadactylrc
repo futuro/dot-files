@@ -55,6 +55,8 @@ highlight URL color: #0087ff; background: #161616; text-decoration: none;
 highlight WarningMsg color: #ff0000; background: #161616;
 
 " Misc options
+map -modes=n,v <A-S-S> :set<Space>nst!=<A-Tab>
+map -modes=n,v <A-s> :set<Space>nss!=<A-Tab>
 set defsearch=ddg
 
 " vim: set ft=pentadactyl:

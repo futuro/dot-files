@@ -79,6 +79,8 @@
 # Extension for line ending conversion filters for the Windows platform.
 # win32text=/usr/share/python-support/mercurial/hgext/win32text.py
 
+purge = 
+
 [extdiff]
 # DirDiff script for Vim: http://www.vim.org/scripts/script.php?script_id=102
 # wget http://www.vim.org/scripts/download_script.php?src_id=5306 -O ~/.vim/plugin/DirDiff.vim

@@ -10,6 +10,9 @@ if [[ -r ~/.dircolors ]]; then
 	eval $(dircolors -b ~/.dircolors)
 fi
 
+stty stop undef
+stty start undef
+
 unset LESS_TERMCAP_mb
 unset LESS_TERMCAP_md
 unset LESS_TERMCAP_me

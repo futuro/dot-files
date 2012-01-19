@@ -28,6 +28,9 @@ fi
 
 SSH_ENV="$HOME/.ssh/environment"
 
+# I don't have a need to stop terminal output, so I undefine this
+stty stop undef
+
 #function start_agent {
 #     echo "Initialising new SSH agent..."
 #     /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"

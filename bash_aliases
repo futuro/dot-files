@@ -6,7 +6,6 @@ alias ack="ack-grep"
 alias b="byobu"
 alias br="byobu -r"
 alias diff='LC_ALL=C TZ=GMT0 diff -Naur'
-alias edalias="vim ~/.etc/bash_aliases"
 alias killflash="pkill -15 -f flash"
 alias recurfromdos="find . -type f -exec fromdos {} \;"
 alias recurtodos="find . -type f -exec todos {} \;"
@@ -36,7 +35,7 @@ alias ati="sudo aptitude install"
 
 ### ALIASES ### {{{
 alias aliases="source ~/.bash_aliases"
-alias vialiases="vim ~/.etc/.bash_aliases"
+alias edalias="vim ~/.etc/bash_aliases"
 ### ALIASES ### }}}
 
 ### CMUS ### {{{

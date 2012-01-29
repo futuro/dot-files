@@ -4,6 +4,8 @@
 # shell /bin/bash
 # defscrollback 30000
 # term xterm-256color
+# I still haven't found a useful term setting that enables color but doesn't erase the
+# background. I should put more time into this eventually.
 # vbell off
 bind t focus top
 bind k focus up

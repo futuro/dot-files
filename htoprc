@@ -1,6 +1,8 @@
 # Beware! This file is rewritten every time htop exits.
 # The parser is also very primitive, and not human-friendly.
 # (I know, it's in the todo list).
+# HTop might overwrite the symlink in ~, so this file might be useless
+# inside ~/.etc. Oh well.
 fields=0 48 17 18 38 39 40 2 46 47 49 1 
 sort_key=47
 sort_direction=1

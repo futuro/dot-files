@@ -10,6 +10,18 @@ if [[ -r ~/.dircolors ]]; then
 	eval $(dircolors -b ~/.dircolors)
 fi
 
+if [[ -z $SSH_AUTH_SOCK ]]; then
+for ssh_dir in $(find /tmp -maxdepth 1 -name "ssh-*" -perm 700 -type d); do
+    if [[ -O ${ssh_dir} ]]; then
+        for ssh_sock in ${ssh_dir}/agent.*; do
+            if [[ -S ${ssh_sock} ]]; then
+                export SSH_AUTH_SOCK=${ssh_sock}
+            fi
+        done
+    fi
+done
+fi
+
 stty stop undef
 stty start undef
 
